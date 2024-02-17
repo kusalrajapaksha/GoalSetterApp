@@ -87,25 +87,32 @@ h3 {
 }
 
 .goals {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 10px;
+  display: flex;
+  flex-direction: column;
 }
 
 .goal {
   background-color: #f4f4f4;
   margin: 10px 0;
-  padding: 20px 0 10px;
+  padding: 25px 10px 10px;
   position: relative;
+  text-align: left;  
+  overflow-wrap: break-word;
+  border-radius: 10px;
 }
+
 
 .goal .close {
   position: absolute;
-  top: 10px;
-  right: 15px;
+  top: 5px;
+  right: 5px;
   cursor: pointer;
   border: none;
-  background: none;
+  padding: 5px;
+  background: transparent;
+  /* background: red;
+  color: white;
+  border-radius: 5px; */
 }
 
 .form,
